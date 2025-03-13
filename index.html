@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <label for="firstName">First Name: {{firstName}} </label>
+        <input type="text" name="firstName" id="firstName" placeholder="enter your first name" v-model = "fName">
+        <label for="lastName">last Name:{{lastName}} </label>
+        <input type="text" name="lastName" id="lastName" placeholder="enter your last name" v-model = "lName">
+        <p>Full Name: {{fullName}}</p>
+        <label for="quantity">Quantity: </label>
+        <input type="number" name="quantity" id="quantity" min="0" v-model = "quantity">
+        <p>Price per Item: ${{price}}</p>
+        <p>Total Price: ${{TotalPrice}}</p>
+        <button @click = "clearField">Clear Field</button>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+    <script src="Scripts/app.js"></script>
+</body>
+</html>
